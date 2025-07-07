@@ -7,5 +7,5 @@ async def root():
     return {"message": "Hello World"}
 @app.get("/health")
 async def root():
-    return {"status":"ok"}
+    return {"status":"OK"}
 
