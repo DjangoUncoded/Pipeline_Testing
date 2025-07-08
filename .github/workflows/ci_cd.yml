@@ -41,5 +41,5 @@ jobs:
       - name: Push to Docker Hub (optional)
         if: github.ref == 'refs/heads/main'
         run: |
-          docker tag fastapi-hello-world ${{ secrets.DOCKER_HUB_USERNAME }}/fastapi-hello-world:latest
+          docker tag fastapi-hello-world ${{ secrets.DOCKER_HUB_USERNAME }}/first:latest
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/fastapi-hello-world:latest
